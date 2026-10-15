@@ -1,5 +1,6 @@
 const express = require("express")
 const bcrypt = require("bcryptjs")
+const jwt = require("jsonwebtoken")
 const User = require("../models/User")
 
 const router = express.Router()
@@ -59,6 +60,57 @@ router.post("/signup", async (request, response) => {
         }
 
         console.error("Signup failed:", error.name)
+        return response.status(500).json({ error: "Internal server error" })
+    }
+})
+
+router.post("/login", async (request, response) => {
+    const body = request.body
+
+    if (!body || typeof body !== "object" || Array.isArray(body)) {
+        return response.status(400).json({ error: "A JSON object is required" })
+    }
+
+    const username = typeof body.username === "string" ? body.username.trim().toLowerCase() : ""
+    const email = typeof body.email === "string" ? body.email.trim().toLowerCase() : ""
+    const hasUsername = username.length > 0
+    const hasEmail = email.length > 0
+
+    if (Object.keys(body).some(field => !["username", "email", "password"].includes(field)) ||
+        hasUsername === hasEmail || typeof body.password !== "string" || body.password.length === 0) {
+        return response.status(400).json({
+            error: "Provide either username or email, plus password"
+        })
+    }
+
+    if ((hasUsername && !/^[a-z0-9_]{3,30}$/.test(username)) ||
+        (hasEmail && (email.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))) ||
+        Buffer.byteLength(body.password, "utf8") > 72) {
+        return response.status(400).json({ error: "Invalid login fields" })
+    }
+
+    try {
+        const user = await User.findOne(hasUsername ? { username } : { email }).select("+password")
+        if (!user || !(await bcrypt.compare(body.password, user.password))) {
+            return response.status(401).json({ error: "Invalid credentials" })
+        }
+
+        const token = jwt.sign({}, process.env.JWT_SECRET, {
+            algorithm: "HS256",
+            subject: user.id,
+            issuer: "comp3123-assignment1",
+            audience: "comp3123-api",
+            expiresIn: "1h"
+        })
+
+        return response.status(200).json({
+            message: "Login successful",
+            token,
+            token_type: "Bearer",
+            expires_in: 3600
+        })
+    } catch (error) {
+        console.error("Login failed:", error.name)
         return response.status(500).json({ error: "Internal server error" })
     }
 })
