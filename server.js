@@ -4,12 +4,14 @@ const express = require("express")
 const mongoose = require("mongoose")
 const User = require("./models/User")
 const userRoutes = require("./routes/UserRoutes")
+const employeeRoutes = require("./routes/EmployeeRoutes")
 
 const app = express()
 const PORT = process.env.PORT || 8081
 
 app.use(express.json())
 app.use("/api/v1/user", userRoutes)
+app.use("/api/v1/emp", employeeRoutes)
 
 app.get("/health", (request, response) => {
     response.status(200).json({
