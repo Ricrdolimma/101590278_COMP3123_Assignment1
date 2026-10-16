@@ -614,10 +614,40 @@
         {
           "name": "Employee creation without JWT",
           "request": {
-            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{tokenA}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
             "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"first_name\": \"Taylor\",\n  \"last_name\": \"Morgan\",\n  \"email\": \"taylor.test@example.com\",\n  \"position\": \"Developer\",\n  \"salary\": 62000,\n  \"date_of_joining\": \"2026-10-15\",\n  \"department\": \"IT\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
             "url": {
-              "raw": ""
+              "raw": "http://localhost:8081/api/v1/emp/employees",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "v1",
+                "emp",
+                "employees"
+              ]
             }
           },
           "response": []
