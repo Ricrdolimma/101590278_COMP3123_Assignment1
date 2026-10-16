@@ -13,6 +13,10 @@ router.post("/employees", async (request, response) => {
         return response.status(400).json({ error: "A JSON object is required" })
     }
 
+    if (Object.prototype.hasOwnProperty.call(body, "user")) {
+        return response.status(403).json({ error: "You cannot set the employee owner" })
+    }
+
     const allowedFields = [
         "first_name",
         "last_name",
@@ -141,6 +145,10 @@ router.put("/employees/:eid", async (request, response) => {
 
     if (!body || typeof body !== "object" || Array.isArray(body)) {
         return response.status(400).json({ error: "A JSON object is required" })
+    }
+
+    if (Object.prototype.hasOwnProperty.call(body, "user")) {
+        return response.status(403).json({ error: "You cannot set the employee owner" })
     }
 
     const allowedFields = [
