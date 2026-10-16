@@ -36,7 +36,7 @@ The environment variables are `MONGODB_URI` for the Atlas connection string, `JW
 
 Signup creates the user account. Login returns a JWT that expires after one hour. All employee routes need `Authorization: Bearer <jwt>` in the request header. In Postman, I put the token in the Bearer Token field.
 
-The middleware verifies the token and gets the logged-in user's ID. Each employee has a `user` ObjectId that refers to the user who created it. Employee queries include that user ID, so a user cannot see or change another user's employees. The API returns 404 if the employee does not exist or does not belong to that user.
+The middleware verifies the token and gets the logged-in user's ID. Each employee has a `user` ObjectId that refers to the user who created it. Employee queries include that user ID, so a user cannot see or change another user's employees. The API returns 404 when an employee does not exist or belongs to another user. It returns 403 if a client tries to set the employee owner in a request body.
 
 ## Security
 
