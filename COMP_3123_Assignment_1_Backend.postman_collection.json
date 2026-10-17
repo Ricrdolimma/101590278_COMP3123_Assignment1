@@ -297,7 +297,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"username\": \"invalid_email_test\",\n  \"email\": \"not-an-email\",\n  \"password\": \"TestPass123!\"\n}",
+              "raw": "{\n  \"username\": \"invalid_email_test\",\n  \"email\": \"not-an-email\",\n  \"password\": \"{{signupPassword}}\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
