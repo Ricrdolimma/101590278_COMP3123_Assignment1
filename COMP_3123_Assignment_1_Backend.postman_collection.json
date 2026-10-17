@@ -1,11 +1,11 @@
 {
   "info": {
-    "_postman_id": "ee09ab48-5ace-462b-8da3-db4c216fc612",
-    "name": "COMP 3123 Assignment 1 Backend",
+    "_postman_id": "31a7d8ec-5157-4c2d-96fb-85fb0730c168",
+    "name": "COMP 3123 Assignment 1 Backend Copy",
     "description": "Run with the matching local environment. The collection contains no passwords, JWTs, or database credentials. The ownership workflow creates and removes its own example employee.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "_exporter_id": "58791932",
-    "_collection_link": "https://go.postman.co/collection/58791932-ee09ab48-5ace-462b-8da3-db4c216fc612?source=collection_link"
+    "_collection_link": "https://go.postman.co/collection/58791932-31a7d8ec-5157-4c2d-96fb-85fb0730c168?source=collection_link"
   },
   "item": [
     {
@@ -28,12 +28,10 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://localhost:8081/health",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/health",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "health"
               ]
@@ -86,12 +84,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/user/signup",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/user/signup",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -133,12 +129,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/user/signup",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/user/signup",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -180,12 +174,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/user/login",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/user/login",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -227,12 +219,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/user/login",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/user/login",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -274,12 +264,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/user/login",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/user/login",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -305,12 +293,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/user/signup",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/user/signup",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -336,12 +322,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/user/signup",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/user/signup",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -367,12 +351,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/user/signup",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/user/signup",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -398,12 +380,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/user/signup",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/user/signup",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -429,12 +409,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/user/login",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/user/login",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -460,12 +438,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/user/login",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/user/login",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -501,12 +477,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -554,12 +528,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -595,12 +567,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -629,12 +599,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -685,12 +653,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -736,12 +702,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -774,12 +738,10 @@
               }
             ],
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -812,18 +774,16 @@
               }
             ],
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees/6ad1a79a1cf835c1a89a87ab",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees/{{employeeId}}",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
                 "emp",
                 "employees",
-                "6ad1a79a1cf835c1a89a87ab"
+                "{{employeeId}}"
               ]
             }
           },
@@ -851,12 +811,10 @@
               }
             ],
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -889,18 +847,16 @@
               }
             ],
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees/6ad1a79a1cf835c1a89a87ab",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees/{{employeeId}}",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
                 "emp",
                 "employees",
-                "6ad1a79a1cf835c1a89a87ab"
+                "{{employeeId}}"
               ]
             }
           },
@@ -941,18 +897,16 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees/6ad1a79a1cf835c1a89a87ab",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees/{{employeeId}}",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
                 "emp",
                 "employees",
-                "6ad1a79a1cf835c1a89a87ab"
+                "{{employeeId}}"
               ]
             }
           },
@@ -980,12 +934,10 @@
               }
             ],
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees?eid=6ad1a79a1cf835c1a89a87ab",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees?eid={{employeeId}}",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -995,7 +947,7 @@
               "query": [
                 {
                   "key": "eid",
-                  "value": "6ad1a79a1cf835c1a89a87ab"
+                  "value": "{{employeeId}}"
                 }
               ]
             }
@@ -1024,18 +976,16 @@
               }
             ],
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees/6ad1a79a1cf835c1a89a87ac",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees/{{employeeBId}}",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
                 "emp",
                 "employees",
-                "6ad1a79a1cf835c1a89a87ac"
+                "{{employeeBId}}"
               ]
             }
           },
@@ -1076,18 +1026,16 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees/6ad1a79a1cf835c1a89a87ac",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees/{{employeeBId}}",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
                 "emp",
                 "employees",
-                "6ad1a79a1cf835c1a89a87ac"
+                "{{employeeBId}}"
               ]
             }
           },
@@ -1115,12 +1063,10 @@
               }
             ],
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees?eid=6ad1a79a1cf835c1a89a87ac",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees?eid={{employeeBId}}",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -1130,7 +1076,7 @@
               "query": [
                 {
                   "key": "eid",
-                  "value": "6ad1a79a1cf835c1a89a87ac"
+                  "value": "{{employeeBId}}"
                 }
               ]
             }
@@ -1172,18 +1118,16 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees/6ad1a9701cf835c1a89a87ae",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees/{{employeeId}}",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
                 "emp",
                 "employees",
-                "6ad1a9701cf835c1a89a87ae"
+                "{{employeeId}}"
               ]
             }
           },
@@ -1211,18 +1155,16 @@
               }
             ],
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees/6ad1a9701cf835c1a89a87ae",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees/{{employeeId}}",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
                 "emp",
                 "employees",
-                "6ad1a9701cf835c1a89a87ae"
+                "{{employeeId}}"
               ]
             }
           },
@@ -1250,12 +1192,10 @@
               }
             ],
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees?eid=6ad1a9701cf835c1a89a87ae",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees?eid={{employeeId}}",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -1265,7 +1205,7 @@
               "query": [
                 {
                   "key": "eid",
-                  "value": "6ad1a9701cf835c1a89a87ae"
+                  "value": "{{employeeId}}"
                 }
               ]
             }
@@ -1294,18 +1234,16 @@
               }
             ],
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees/6ad1a9701cf835c1a89a87ae",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees/{{employeeId}}",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
                 "emp",
                 "employees",
-                "6ad1a9701cf835c1a89a87ae"
+                "{{employeeId}}"
               ]
             }
           },
@@ -1333,12 +1271,10 @@
               }
             ],
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees?eid=6ad1ac311cf835c1a89a87b3",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees?eid={{employeeBId}}",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -1348,7 +1284,7 @@
               "query": [
                 {
                   "key": "eid",
-                  "value": "6ad1ac311cf835c1a89a87b3"
+                  "value": "{{employeeBId}}"
                 }
               ]
             }
@@ -1377,12 +1313,10 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -1415,12 +1349,10 @@
               }
             ],
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -1453,12 +1385,10 @@
               }
             ],
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees/not-an-id",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees/not-an-id",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -1492,12 +1422,10 @@
               }
             ],
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees/000000000000000000000000",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees/000000000000000000000000",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -1544,12 +1472,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -1595,12 +1521,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/emp/employees",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/emp/employees",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -1628,12 +1552,10 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://localhost:8081/not-a-route",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/not-a-route",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "not-a-route"
               ]
@@ -1677,12 +1599,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/user/login",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/user/login",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -1724,12 +1644,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/user/login",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/user/login",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -1771,12 +1689,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/user/login",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/user/login",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -1818,12 +1734,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/user/login",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/user/login",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -1865,12 +1779,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/user/login",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/user/login",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -1912,12 +1824,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/user/login",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/user/login",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -1959,12 +1869,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/user/login",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/user/login",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -2006,12 +1914,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/user/login",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/user/login",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -2053,12 +1959,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/user/login",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/user/login",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -2100,12 +2004,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/user/login",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/user/login",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
@@ -2147,12 +2049,10 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8081/api/v1/user/login",
-              "protocol": "http",
+              "raw": "{{baseUrl}}/api/v1/user/login",
               "host": [
-                "localhost"
+                "{{baseUrl}}"
               ],
-              "port": "8081",
               "path": [
                 "api",
                 "v1",
